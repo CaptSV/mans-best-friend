@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man's Best Friend</title>
+
+    <!-- CSS Styles -->
+    <style>
+      body {
+        background-color: #f2e9e4;
+        font-family: "Helvetica", Arial;
+        color: #22223b;
+        font-size: larger;
+      }
+      h1 {
+        margin-right: auto;
+        margin-left: 1rem;
+      }
+      h2 {
+        text-align: center;
+        margin: 2rem auto;
+      }
+      hr {
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid #22223b;
+      }
+      ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        list-style-type: none;
+      }
+      li {
+        margin: 0 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      a:hover {
+        color: #9a8c98;
+      }
+      img {
+        width: 20%;
+        height: auto;
+        margin: 1rem;
+      }
+      table {
+        border: #22223b 1px solid;
+        margin: 2rem auto;
+        padding: 0.5rem;
+        background-color: #f4f4f9;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: #22223b 1px solid;
+        padding: 0.5rem;
+      }
+      th {
+        background-color: #4a4e69;
+        color: #f2e9e4;
+      }
+      tr:nth-child(even) {
+        background-color: #f4f4f9;
+      }
+      tr:nth-child(odd) {
+        background-color: #e4e4e9;
+      }
+      iframe {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .navigation-bar {
+        display: flex;
+        align-items: center;
+      }
+      .main-content__breeds-list {
+        display: flex;
+        flex-direction: column;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      .back-to-top {
+        text-align: right;
+        margin: 1rem;
+      }
+      .park-section {
+        text-align: center;
+      }
+      .park-section__map {
+        width: 80%;
+        height: 400px;
+        border: 0;
+      }
+      .park-section__description {
+        margin: 5rem;
+      }
+      .videos-section__videos {
+        display: flex;
+        justify-content: space-between;
+      }
+      .videos-section iframe {
+        flex: 1;
+        max-width: 35%;
+        height: 315px;
+      }
+      .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+        color: #4a4e69;
+      }
+      .footer__email {
+        color: #4a4e69;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Head Navbar -->
+    <div class="navigation-bar">
+      <h1>Man's Best Friend</h1>
+      <ul>
+        <li>
+          <h3>
+            <a href="main.html">Home</a>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="">Breeds</a>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="gallery.html">Gallery</a>
+          </h3>
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <main>
+      <h2>Popular Dog Breeds</h2>
+
+      <!-- Main Container -->
+      <div class="main-content">
+        <div class="main-content__breeds-list">
+          <!-- 1st Row -->
+          <div class="row">
+            <img
+              src="Images/french-bulldog.jpg"
+              alt="Close-Up Photo of Brown Dog"
+            />
+            <div>
+              <h4>French Bulldog</h4>
+              <p>
+                The French Bulldog resembles a Bulldog in miniature, except for
+                the large, erect <q>bat ears</q> that are the breed's trademark
+                feature. The head is large and square, with heavy wrinkles
+                rolled above the extremely short nose. The body beneath the
+                smooth, brilliant coat is compact and muscular. The bright,
+                affectionate Frenchie is a charmer.
+              </p>
+              <p>
+                <strong>Temperament</strong>: playful, alert, adaptable, and
+                completely irresistible.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd Row -->
+          <div class="row">
+            <img
+              src="Images/labrador-retriever.jpg"
+              alt="Close-up Photography of Adult Golden Retriever"
+            />
+            <div>
+              <h4>Labrador Retriever</h4>
+              <p>
+                The sturdy, well-balanced Labrador Retriever can, depending on
+                the sex, stand from 21.5 to 24.5 inches at the shoulder and
+                weigh between 55 to 80 pounds. The dense, hard coat comes in
+                yellow, black, and a luscious chocolate. The head is wide, the
+                eyes glimmer with kindliness, and the thick, tapering
+                <q>otter tail</q> seems to be forever signaling the breed's
+                innate eagerness. Labs are famously friendly.
+              </p>
+              <p>
+                <strong>Temperament</strong>: active, friendly, and outgoing.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3rd Row -->
+          <div class="row">
+            <img
+              src="Images/golden-retriever.jpg"
+              alt="Light Golden Retriever Sitting on Green Grass during Daytime"
+            />
+            <div>
+              <h4>Golden Retriever</h4>
+              <p>
+                The Golden Retriever, an exuberant Scottish gundog of great
+                beauty, stands among America's most popular dog breeds. They are
+                serious workers at hunting and field work, as guides for the
+                blind, and in search-and-rescue, enjoy obedience and other
+                competitive events, and have an endearing love of life when not
+                at work. The Golden Retriever is a sturdy, muscular dog of
+                medium size, famous for the dense, lustrous coat of gold that
+                gives the breed its name.
+              </p>
+              <p>
+                <strong>Temperament</strong>: intelligent, friendly, and
+                devoted.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4th Row -->
+          <div class="row">
+            <img
+              src="Images/german-shepherd.jpg"
+              alt="Beautiful German Shepherd"
+            />
+            <div>
+              <h4>German Shepherd Dog</h4>
+              <p>
+                Generally considered dogkind's finest all-purpose worker, the
+                German Shepherd Dog is a large, agile, muscular dog of noble
+                character and high intelligence. Loyal, confident, courageous,
+                and steady, the German Shepherd is truly a dog lover's delight.
+                German Shepherd Dogs can stand as high as 26 inches at the
+                shoulder and, when viewed in outline, presents a picture of
+                smooth, graceful curves rather than angles. The natural gait is
+                a free-and-easy trot, but they can turn it up a notch or two and
+                reach great speeds.
+              </p>
+              <p>
+                <strong>Temperament</strong>: courageous, confident, and smart.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5th Row -->
+          <div class="row">
+            <img src="Images/poodle.jpg" alt="A Poodle on the Grass" />
+            <div>
+              <h4>Poodle</h4>
+              <p>
+                Whether Standard, Miniature, or Toy, and either black, white, or
+                apricot, the Poodle stands proudly among dogdom's true
+                aristocrats. Beneath the curly, low-allergen coat is an elegant
+                athlete and companion for all reasons and seasons. Poodles come
+                in three size varieties: Standards should be more than 15 inches
+                tall at the shoulder; Miniatures are 15 inches or under; Toys
+                stand no more than 10 inches. All three varieties have the same
+                build and proportions.
+              </p>
+              <p>
+                <strong>Temperament</strong>: active, proud, and very smart.
+              </p>
+            </div>
+          </div>
+
+          <!-- 6th Row -->
+          <div class="row">
+            <img src="Images/dachshund.jpg" alt="dachshund sitting in chair" />
+            <div>
+              <h4>Dachshund</h4>
+              <p>
+                The famously long, low silhouette, ever-alert expression, and
+                bold, vivacious personality of the Dachshund have made him a
+                superstar of the canine kingdom. Dachshunds come in two sizes
+                and in three coat types of various colors and patterns. The word
+                <q>icon</q> is terribly overworked, but the Dachshund with his
+                unmistakable long-backed body, little legs, and big personality
+                is truly an icon of purebred dogdom.
+              </p>
+              <p>
+                <strong>Temperament</strong>: curious, friendly, and spunky.
+              </p>
+            </div>
+          </div>
+
+          <!-- 7th Row -->
+          <div class="row">
+            <img src="Images/rottweiler.jpg" alt="rottweiler close up" />
+            <div>
+              <h4>Rottweiler</h4>
+              <p>
+                The Rottweiler is a robust working breed of great strength
+                descended from the mastiffs of the Roman legions. A gentle
+                playmate and protector within the family circle, the Rottie
+                observes the outside world with a self-assured aloofness. A male
+                Rottweiler will stand anywhere from 24 to 27 muscular inches at
+                the shoulder; females run a bit smaller and lighter. .
+              </p>
+              <p>
+                <strong>Temperament</strong>: loyal, loving, and confident
+                guardian.
+              </p>
+            </div>
+          </div>
+
+          <!-- 8th Row -->
+          <div class="row">
+            <img src="Images/bulldog.jpg" alt="Bulldog with a bandana collar" />
+            <div>
+              <h4>Bulldog</h4>
+              <p>
+                Kind but courageous, friendly but dignified, the Bulldog is a
+                thick-set, low-slung, well-muscled bruiser whose
+                <q>sourmug</q> face is the universal symbol of courage and
+                tenacity. These docile, loyal companions adapt well to town or
+                country. You can't mistake a Bulldog for any other breed. The
+                loose skin of the head, furrowed brow, pushed-in nose, small
+                ears, undershot jaw with hanging chops on either side, and the
+                distinctive rolling gait all practically scream
+                <q>I'm a Bulldog!</q> The coat, seen in a variety of colors and
+                patterns, is short, smooth, and glossy.
+              </p>
+              <p>
+                <strong>Temperament</strong>: friendly, courageous, and calm.
+              </p>
+            </div>
+          </div>
+
+          <!-- 9th Row -->
+          <div class="row">
+            <img src="Images/beagle.jpg" alt="Beagle relaxing on a blanket" />
+            <div>
+              <h4>Beagle</h4>
+              <p>
+                Not only is the Beagle an excellent hunting dog and loyal
+                companion, it is also happy-go-lucky, funny, and
+                <q>thanks to its pleading expression</q> cute. They were bred to
+                hunt in packs, so they enjoy company and are generally
+                easygoing. There are two Beagle varieties: those standing under
+                13 inches at the shoulder, and those between 13 and 15 inches.
+                Both varieties are sturdy, solid, and 'big for their inches,' as
+                dog folks say.
+              </p>
+              <p><strong>Temperament</strong>: curious, friendly, and merry.</p>
+            </div>
+          </div>
+
+          <!-- 10th Row -->
+          <div class="row">
+            <img
+              src="Images/german-shorthaired-pointer.jpg"
+              alt="german shorthaired pointer dog looking at the camera"
+            />
+            <div>
+              <h4>German Shorthaired Pointer</h4>
+              <p>
+                The versatile, medium-sized German Shorthaired Pointer is an
+                enthusiastic gundog of all trades who thrives on vigorous
+                exercise, positive training, and a lot of love. GSP people call
+                their aristocratic companions the <q>perfect pointer.</q> Male
+                German Shorthaired Pointers stand between 23 and 25 inches at
+                the shoulder and weigh anywhere from 55 to 70 pounds; females
+                run smaller.
+              </p>
+              <p>
+                <strong>Temperament</strong>: friendly, smart, and willing to
+                please.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trait Table -->
+        <table>
+          <tr>
+            <th rowspan="2">Breed Name</th>
+            <th colspan="2">Physical Traits</th>
+            <th rowspan="2">Temperament</th>
+            <th rowspan="2">Life Expectancy</th>
+          </tr>
+          <tr>
+            <th>Size</th>
+            <th>Coat Type</th>
+          </tr>
+          <tr>
+            <td>French Bulldog</td>
+            <td>Small</td>
+            <td>Short</td>
+            <td>Friendly</td>
+            <td>10-12 Years</td>
+          </tr>
+          <tr>
+            <td>Labrador Retriever</td>
+            <td>Large</td>
+            <td>Short</td>
+            <td>Friendly</td>
+            <td>10-12 Years</td>
+          </tr>
+          <tr>
+            <td>Golden Retriever</td>
+            <td>Large</td>
+            <td>Long</td>
+            <td>Intelligent</td>
+            <td>10-12 Years</td>
+          </tr>
+          <tr>
+            <td>German Shephard</td>
+            <td>Large</td>
+            <td>Short</td>
+            <td>Confident</td>
+            <td>9-13 Years</td>
+          </tr>
+          <tr>
+            <td>Poodle</td>
+            <td>Small</td>
+            <td>Curly</td>
+            <td>Intelligent</td>
+            <td>12-14 Years</td>
+          </tr>
+          <tr>
+            <td>Dachshund</td>
+            <td>Small</td>
+            <td>Short</td>
+            <td>Curious</td>
+            <td>12-16 Years</td>
+          </tr>
+          <tr>
+            <td>Rottweiler</td>
+            <td>Large</td>
+            <td>Short</td>
+            <td>Courageous</td>
+            <td>8-10 Years</td>
+          </tr>
+          <tr>
+            <td>Bulldog</td>
+            <td>Medium</td>
+            <td>Short</td>
+            <td>Calm</td>
+            <td>8-12 Years</td>
+          </tr>
+          <tr>
+            <td>Beagle</td>
+            <td>Medium</td>
+            <td>Short</td>
+            <td>Loving</td>
+            <td>12-15 Years</td>
+          </tr>
+          <tr>
+            <td>German Shorthaired Pointer</td>
+            <td>Medium</td>
+            <td>Short</td>
+            <td>Energetic</td>
+            <td>12-14 Years</td>
+          </tr>
+        </table>
+
+        <!-- Park Section -->
+        <div class="park-section">
+          <div class="park-section__description">
+            <h2>Visit the Central Bark BGC</h2>
+            <p>
+              You may catch your favorite dog breeds in the country! Central
+              Bark BGC is a dog park located in Bonifacio Global City, Taguig.
+              It is a place where dogs can run around and play with other dogs.
+              The park is open from 6:00 AM to 10:00 PM.
+            </p>
+          </div>
+          <iframe
+            class="park-section__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.9584149530067!2d121.04637243484865!3d14.546748578393883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c99518c336ed%3A0x7ff9972b726133f!2sCentral%20Bark%20BGC!5e0!3m2!1sen!2sph!4v1737293687475!5m2!1sen!2sph"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- YouTube Videos -->
+        <div class="videos-section">
+          <h2>Watch Videos About The Park!</h2>
+          <div class="videos-section__videos">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qHRH_ALNDAc?si=AKZeP_cT9bVxFGXO"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/MVqeXvlr9yE?si=7kRpmjwmJmSFIBwO"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top -->
+      <p class="back-to-top">
+        <a href="">Back to the Top</a>
+      </p>
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer__content">
+        <p>Author: Simon Ralph P. Valenzuela</p>
+        <address>
+          Email:
+          <a
+            href="mailto:srpvalenzuela@mymail.mapua.edu.ph"
+            class="footer__email"
+            >srpvalenzuela@mymail.mapua.edu.ph</a
+          >
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
